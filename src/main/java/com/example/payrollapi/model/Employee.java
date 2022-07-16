@@ -8,6 +8,7 @@ import java.io.Serializable;
 @Table(name = "employee")
 public class Employee implements Serializable {
 
+
     // Setup id, empname, emptitle fields that are mapped to the Payroll.Employee table
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +19,16 @@ public class Employee implements Serializable {
 
     @NotBlank
     private String emptitle;
+
+    // Constructors
+    public Employee() {
+    }
+
+    public Employee(Long id, String empname, String emptitle) {
+        this.id = id;
+        this.empname = empname;
+        this.emptitle = emptitle;
+    }
 
     // GETTERS and SETTERS
     public Long getId() {

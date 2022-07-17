@@ -15,35 +15,40 @@ Simple API for interacting with employee data
 git clone https://github.com/MatthewDudley/PayrollAPI.git
 ```
 
-**2. Create Mysql database**
-
-+ Grab the **creatdb.sql** script in the project and run in your MySql environment.
-
-**3. Update your mysql username and password to your environemnt**
-
-+ `src/main/resources/application.properties`
-+ `spring.datasource.username`
-+ `spring.datasource.password`
-
-**4. Build and run**
-
 ```bash
-mvn spring-boot:run
+docker-compose up
 ```
 
-Test in your browser of usring Postman!
+Test in your browser of using Postman!
 
 <http://localhost:8080/api/test>
 
-<http://localhost:8080/api/employees> (GET)
+![ALT TEXT](./resources/PostmanBaseTest.png)
 
-<http://localhost:8080/api/employees> (POST + body needed)
+<http://localhost:8080/api/employees>
 
-<http://localhost:8080/api/employees/2> (GET)
+![ALT TEXT](./resources/PostmanGETAll.png)
 
-<http://localhost:8080/api/employees/2> (PUT + body needed)
+<http://localhost:8080/api/employees>
 
-# References
+![ALT TEXT](./resources/PostmanPOST.png)
+
+<http://localhost:8080/api/employees/{id}>
+
+![ALT TEXT](./resources/PostmanGETID.png)
+
+<http://localhost:8080/api/employees/{id}>
+
+![ALT TEXT](./resources/PostmanPUT.png)
+
+# Done
+
+```bash
+docker-compose down
+```
+
+## References
 + https://www.callicoder.com/
 + https://spring.io/guides/gs/testing-web/
 + https://www.stackabuse.com
++ https://www.bezkoder.com/

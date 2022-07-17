@@ -16,28 +16,32 @@ git clone https://github.com/MatthewDudley/PayrollAPI.git
 ```
 
 ```bash
+cd PayrollAPI
+```
+
+```bash
 docker-compose up
 ```
 
-Test in your browser of using Postman!
+Test in your browser or using Postman!
 
-<http://localhost:8080/api/test>
+<http://localhost:6868/api/test>
 
 ![ALT TEXT](./resources/PostmanBaseTest.png)
 
-<http://localhost:8080/api/employees>
+<http://localhost:6868/api/employees>
 
 ![ALT TEXT](./resources/PostmanGETAll.png)
 
-<http://localhost:8080/api/employees>
+<http://localhost:6868/api/employees>
 
 ![ALT TEXT](./resources/PostmanPOST.png)
 
-<http://localhost:8080/api/employees/{id}>
+<http://localhost:6868/api/employees/{id}>
 
 ![ALT TEXT](./resources/PostmanGETID.png)
 
-<http://localhost:8080/api/employees/{id}>
+<http://localhost:6868/api/employees/{id}>
 
 ![ALT TEXT](./resources/PostmanPUT.png)
 

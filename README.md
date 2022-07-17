@@ -42,3 +42,8 @@ Test in your browser of usring Postman!
 <http://localhost:8080/api/employees/2> (GET)
 
 <http://localhost:8080/api/employees/2> (PUT + body needed)
+
+# References
++ https://www.callicoder.com/
++ https://spring.io/guides/gs/testing-web/
++ https://www.stackabuse.com
